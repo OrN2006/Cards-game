@@ -1,0 +1,125 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(248, 237, 227);
+    font-family: 'Lobster', cursive;
+}
+
+.container-fluid{
+    width: 100%;
+    /* outline: 2px solid red; */
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+    /* outline: 2px solid green; */
+}
+
+header .container{
+    background-color: rgb(223, 211, 195b);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+h1{
+    margin: 30px;
+    text-shadow: 5px 0 #232931;
+    font-size: 8rem;
+    color: #4ECCA3;
+}
+
+main .container{
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards_collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.starting_card{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(141, 73, 58);
+    margin: 0 4rem;
+}
+
+.starting_card:hover{
+    border: 2px solid rgb(208, 184, 168);
+}
+
+/* הכרטיס הזוכה נכון */
+.winning_card{
+    width: 250px;
+    height: 250px;
+    background-color: gold;
+    margin: 0 4rem;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+button{
+    background-color: #08b374; 
+    border: none;
+    border-radius: 5%;
+    color: white;
+    padding: 2rem 3.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5rem;
+  
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    main .container{
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .card{
+        margin: 4rem 0;
+    }
+
+    .cards_collection{
+        flex-direction: column;
+    }
+
+    .starting_card{
+        margin: 4rem 0;
+    }
+
+    .winning_card{
+        margin: 4rem 0;
+    }
+    
+}
